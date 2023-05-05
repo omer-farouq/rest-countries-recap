@@ -1,12 +1,12 @@
 .countries{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 .country {
     border: 2px solid darkorange;
     background-color: aqua;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
 }
 .country img{
