@@ -9,13 +9,14 @@ const displayCountries = countries => {
     const countryHTML = countries.map(country => getCountryHTML(country));
     console.log(countryHTML[0]);
     const countiresContainer = document.getElementById("countries-container");
-    countiresContainer.innerHTML = countryHTML;
+    countiresContainer.innerHTML = countryHTML.join(" ");
 }
 
 const getCountryHTML = country =>{
     return `
-        <div>
+        <div class="country">
             <h1>${country.name.common}</h1>
+            <img src="${country.flags.png}">
         </div>
     `
 }
